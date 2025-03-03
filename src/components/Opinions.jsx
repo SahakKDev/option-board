@@ -1,11 +1,11 @@
-import { use } from 'react';
+import { use } from "react";
 
-import { Opinion } from './Opinion';
-import { OpinionsContext } from '../store/opinions-context';
+import { Opinion } from "./Opinion";
+import { OpinionsContext } from "../store/opinions-context";
 
 export function Opinions() {
   const { opinions } = use(OpinionsContext);
-  
+
   return (
     <div id="opinions">
       <h2>User Opinions</h2>

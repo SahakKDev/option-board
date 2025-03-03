@@ -2,6 +2,7 @@ import { useActionState } from "react";
 import { isInRange, isNotEmpty } from "../utils/validation";
 import { use } from "react";
 import { OpinionsContext } from "../store/opinions-context";
+import Submit from "./Submit";
 
 export function NewOpinion() {
   const [formState, formAction] = useActionState(shareOpinionAction, {
@@ -84,9 +85,7 @@ export function NewOpinion() {
           </ul>
         )}
 
-        <p className="actions">
-          <button type="submit">Submit</button>
-        </p>
+        <Submit />
       </form>
     </div>
   );
